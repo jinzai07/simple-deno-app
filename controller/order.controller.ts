@@ -3,6 +3,9 @@ import { Product } from '../shared/models/product.model.ts';
 
 import { getOrderByID } from '../shared/extenstions/find-order-by-id.ts';
 
+/**
+ * sample fake data for orders
+ */
 export let orders: Order[] = [
     {
         id: 1,
@@ -25,6 +28,7 @@ export let orders: Order[] = [
 ]
 
 export class OrderController {
+
     static getAll({ response }: { response: any }): void {
         response.body = orders;
     }
@@ -51,7 +55,7 @@ export class OrderController {
             return;
         }
         response.status = 404;
-        response.body = { message: 'Order not found!' }
+        response.body = { message: 'Order not found!' };
     }
 
     static async updateOne({ params, request, response }: { params: { id: string }; request: any; response: any }): Promise<any> {
@@ -89,7 +93,7 @@ export class OrderController {
         return {
             ...body,
             id
-        }
+        };
     }
 
 }

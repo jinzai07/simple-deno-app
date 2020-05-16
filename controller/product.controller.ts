@@ -1,5 +1,8 @@
 import { Product } from "../shared/models/product.model.ts";
 
+/**
+ * products object fake data
+ */
 let products: Product[] = [
     {
         id: 1,

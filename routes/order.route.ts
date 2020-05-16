@@ -3,6 +3,9 @@ import { OrderController, orders } from '../controller/order.controller.ts';
 
 const router = new Router();
 
+/**
+ * initializes order routes
+ */
 router
     .get('/orders', OrderController.getAll)
     .get('/orders/:id', OrderController.getOne)

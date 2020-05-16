@@ -7,6 +7,9 @@ const env = Deno.env.toObject();
 const HOST = env.HOST || '127.0.0.1';
 const PORT = env.PORT || 3000;
 
+/**
+ * oak application init
+ */
 const app = new Application();
 
 app.use(orderRoutes.routes());
