@@ -5,6 +5,7 @@
 
 <h3>Main Technologies/Libraries used:</h3>
 <ul>
+    <li>Deno</li>
     <li>Oak</li>
     <li>Javascipt/TypeScript</li>
 </ul>
